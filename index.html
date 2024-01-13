@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="imageLogo">
+            <img src="assets/logo.svg" alt="logo spliter">
+        </div>
+        <main class="form">
+            <form class="formWrapper" action="">
+                <section class="sideInputs">
+                    <div class="inputBillContainer">
+                        <label class="labelBill" for="inputBill">Bill</label>
+                        <div class="inputBillContent">
+                            <img src="assets/icon-dollar.svg" alt="icone dolar">
+                            <input type="number" name="" id="inputBill" class="inputBill" placeholder="0">
+                        </div>
+                    </div>
+                    <div class="inputSelectTip">
+                        <label class="inputPercTip" for="inputPercTip">Select Tip %</label>
+                        <div class="buttonSelectTips">
+                            <button class="btn5Perc buttonPercTip" type="button" >5%</button>
+                            <button class="btn10Perc buttonPercTip" type="button" >10%</button>
+                            <button class="btn15Perc buttonPercTip" type="button" >15%</button>
+                            <button class="btn25Perc buttonPercTip" type="button" >25%</button>
+                            <button class="btn50Perc buttonPercTip" type="button" >50%</button>
+                            <input class="btnInputPerc" type="number" id="inputPercTip" placeholder="Custom">
+                        </div>
+                    </div>
+                    <div class="inputNumberPeopleCotainer">
+                        <label class="labelPeople" for="inputPeople">Number of people</label>
+                        <div class="inputPeopleContent">
+                            <img src="assets/icon-person.svg" alt="icone pessoa">
+                            <input type="number" name="" id="inputPeople" class="inputPeople" placeholder="0">
+                        </div>
+                    </div>
+                </section>
+                <section class="sideResult">
+                    
+                </section>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>

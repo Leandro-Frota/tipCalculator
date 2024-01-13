@@ -1,0 +1,177 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%; 
+
+    --bc-body: hsl(185, 41%, 84%);
+    --bc--perc-resul: hsl(183, 100%, 15%);
+    --fc-tex: hsl(186, 14%, 43%);
+    --bc-input:hsl(189, 41%, 97%);
+    --bc-inputfocus:hsl(172, 67%, 45%);
+    ---fc-text-label:hsl(184, 14%, 56%);
+
+
+    
+}
+
+body{
+    background-color: var(--bc-body);
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Space Mono', monospace;
+}
+
+.app{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+}
+
+.imageLogo{
+    margin-bottom: 2rem;
+    margin-inline: auto;    
+}
+.form{
+    min-width: 70rem;
+    height: auto;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 2rem;
+}
+.formWrapper{
+    display: flex;
+    gap: 3rem;
+
+}
+
+.inputBillContainer , .inputNumberPeopleCotainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: start;
+}
+
+.inputBillContent, .inputPeopleContent{
+    padding: 0.5rem;
+    background-color: var(--bc-input);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.labelBill, .labelPeople{
+    color: var(--bc--perc-resul);
+}
+.inputBill, .inputPeople{
+    background-color: transparent;
+    outline-style: none;
+    border: none;
+    width: 5rem;
+    height: 2rem;
+    text-align: right;
+    font-weight: 700;
+    font-size: 1.5rem;
+  
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+::placeholder{
+    color: var(--bc--perc-resul);
+}
+
+.sideInputs{
+    flex: 1;
+}
+
+.sideResult{
+    flex:1;
+    background-color: var(--bc--perc-resul);
+    border-radius: 1rem;
+}
+.inputSelectTip{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.buttonSelectTips{
+    display: grid;
+    grid-template-areas: "A B C" "D E F";
+    gap: 1rem;
+    grid-template-columns: 33.33% 33.33% 33.33% ;
+    grid-template-rows: 50% 50%;
+    /* justify-content: stretch; */
+
+    
+}
+
+.btn5Perc{
+    grid-area: A;
+}
+
+.btn10Perc{
+    grid-area: B;
+}
+
+
+.btn15Perc{
+    grid-area: C;
+}
+
+.btn25Perc{
+    grid-area: "D";
+}
+
+.btn50Perc{
+    grid-area: "E";
+}
+
+.btnInputPerc{
+    grid-area: "F";
+    border: none;
+    cursor: pointer;
+
+}
+.btnInputPerc:focus{
+    outline: var(--bc-inputfocus);
+}
+
+.btnInputPerc::placeholder{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(---fc-text-label);
+}
+
+.buttonPercTip{
+    background-color: var(--bc--perc-resul);
+    border-radius: .5rem;
+    color: #ffffff;
+    font-family: 'Space Mono', monospace;
+    border: none;
+    font-size: 2rem;
+}
+
+
+.labelBill, .inputPercTip, .labelPeople{
+    color: var(---fc-text-label);
+}
+
+.inputNumberPeopleCotainer{
+    margin-top: 2rem;
+}
+
+
+
