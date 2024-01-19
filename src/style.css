@@ -56,7 +56,10 @@ body{
     flex-direction: column;
     gap: 0.5rem;
     justify-content: start;
+
+
 }
+
 
 .inputBillContent, .inputPeopleContent{
     padding: 0.5rem;
@@ -65,7 +68,19 @@ body{
     align-items: center;
     justify-content: space-between;
     border-radius: 5px;
+    cursor: pointer;
+    
 }
+
+.inputBillContent:hover{
+    border: 1px solid hsl(172, 67%, 45%);
+}
+
+.inputPeopleContent:hover{
+    border: 1px solid  hsl(172, 67%, 45%);
+}
+
+
 .labelBill, .labelPeople{
     color: var(--bc--perc-resul);
 }
@@ -79,8 +94,11 @@ body{
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--bc--perc-resul);
+
   
 }
+
+
 
 input[type=number]::-webkit-inner-spin-button { /*retirar setas de rolagem do input*/
     -webkit-appearance: none;
@@ -99,7 +117,7 @@ input[type=number]::-webkit-inner-spin-button { /*retirar setas de rolagem do in
 }
 
 .sideResult{
-    flex:1;
+    flex: 1;
     background-color: var(--bc--perc-resul);
     border-radius: 1rem;
 }
@@ -120,16 +138,16 @@ input[type=number]::-webkit-inner-spin-button { /*retirar setas de rolagem do in
 }
 
 .btn5Perc{
-    grid-area: A;
+    grid-area: "A";
 }
 
 .btn10Perc{
-    grid-area: B;
+    grid-area: "B";
 }
 
 
 .btn15Perc{
-    grid-area: C;
+    grid-area: "C";
 }
 
 .btn25Perc{
@@ -145,12 +163,14 @@ input[type=number]::-webkit-inner-spin-button { /*retirar setas de rolagem do in
     border: none;
     cursor: pointer;
     text-align: end;
-    color: ;
+    color: var(--bc--perc-resul) ;
+    font-family: 'Space Mono', monospace;
+    font-size: 2rem;
 
 }
 .btnInputPerc:focus{
     outline: var(--bc-inputfocus);
-    border: 1 px solid;
+    border: 2px solid var(--bc-inputfocus);
 }
 
 .btnInputPerc::placeholder{
@@ -167,6 +187,12 @@ input[type=number]::-webkit-inner-spin-button { /*retirar setas de rolagem do in
     font-family: 'Space Mono', monospace;
     border: none;
     font-size: 2rem;
+    cursor: pointer;
+}
+
+.buttonPercTip:hover{
+    background-color: var(--bc-inputfocus);
+    color: #000000;
 }
 
 
@@ -215,7 +241,7 @@ input[type=number]::-webkit-inner-spin-button { /*retirar setas de rolagem do in
     font-size: 1rem;
 }
 
-.tipAmountResult{
+.tipAmountResult, .tipAccountResult{
     font-family: 'Space Mono', monospace;
     font-size: 3rem;
     color: var(--bc-inputfocus);
