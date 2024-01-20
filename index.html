@@ -29,8 +29,8 @@
                         </div>
                     </div>
                     <div class="inputSelectTip">
-                        <label class="inputPercTip" for="inputPercTip">Select Tip %</label>
-                        <div class="buttonSelectTips">
+                        <p class="inputPercTip" for="">Select Tip %</p>
+                        <div id="buttonSelectTips" class="buttonSelectTips">
                             <button class="btn5Perc buttonPercTip" id="btn5Perc" type="button">5%</button>
                             <button class="btn10Perc buttonPercTip" id="btn10Perc" type="button">10%</button>
                             <button class="btn15Perc buttonPercTip" id="btn15Perc" type="button">15%</button>
@@ -40,8 +40,11 @@
                         </div>
                     </div>
                     <div class="inputNumberPeopleCotainer">
-                        <label class="labelPeople" for="inputPeople">Number of people</label>
-                        <div class="inputPeopleContent">
+                        <div class="labelPeopleAndErrorContainer">
+                            <label class="labelPeople" for="inputPeople">Number of people</label>
+                            <p id="errorPeople"></p>
+                        </div>
+                        <div id="inputPeopleContent" class="inputPeopleContent">
                             <img src="assets/icon-person.svg" alt="icone pessoa">
                             <input type="number" name="" id="inputPeople" class="inputPeople" placeholder="0" required>
                         </div>
@@ -65,11 +68,11 @@
                             <p id="tipAccountResult" class="tipAccountResult">$0.00</p>
 
                         </div>
-                        
+
                     </div>
 
                     <button class="btnReset">RESET</button>
-                    
+
                 </section>
             </form>
         </main>
