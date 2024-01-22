@@ -6,17 +6,26 @@ const btn10Perc = document.getElementById('btn10Perc');
 const btn15Perc = document.getElementById('btn15Perc');
 const btn25Perc = document.getElementById('btn25Perc');
 const btn50Perc = document.getElementById('btn50Perc');
+const inputPercTip = document.getElementById('inputPercTip')
 const tipAmountResult = document.getElementById('tipAmountResult')
 const inputPeople = document.getElementById('inputPeople')
 const inputPeopleContent = document.getElementById('inputPeopleContent')
 const tipAccountResult = document.getElementById('tipAccountResult')
+const btnReset = document.getElementById('btnReset')
 
+console.log(btnReset)
+
+function recarregarPagina(){
+    window.location.reload()
+}
 
 buttonSelectTips.addEventListener('click', function (e) {
     const evento = e.target
     const people = inputPeople.value
     const bill = inputBill.value
+   
     errorPeople.innerText = ""
+
 
     if (evento == btn5Perc) {
 
@@ -72,7 +81,7 @@ buttonSelectTips.addEventListener('click', function (e) {
 
         }
 
-    } else if (btn50Perc) {
+    } else if (btn50Perc == btn50Perc ) {
 
         const result = (bill * 0.50) / people
         const resultPorPerson = (bill / people) + result
@@ -89,4 +98,6 @@ buttonSelectTips.addEventListener('click', function (e) {
     }
 
 })
+
+btnReset.addEventListener('click', recarregarPagina)
 

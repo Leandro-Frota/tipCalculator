@@ -25,17 +25,17 @@
                         <label class="labelBill" for="inputBill">Bill</label>
                         <div class="inputBillContent">
                             <img src="assets/icon-dollar.svg" alt="icone dolar">
-                            <input type="number" name="" id="inputBill" class="inputBill" placeholder="0" required>
+                            <input type="number" name="" id="inputBill" class="inputBill" step=".01" placeholder="0" required>
                         </div>
                     </div>
                     <div class="inputSelectTip">
                         <p class="inputPercTip" for="">Select Tip %</p>
                         <div id="buttonSelectTips" class="buttonSelectTips">
-                            <button class="btn5Perc buttonPercTip" id="btn5Perc" type="button">5%</button>
-                            <button class="btn10Perc buttonPercTip" id="btn10Perc" type="button">10%</button>
-                            <button class="btn15Perc buttonPercTip" id="btn15Perc" type="button">15%</button>
-                            <button class="btn25Perc buttonPercTip" id="btn25Perc" type="button">25%</button>
-                            <button class="btn50Perc buttonPercTip" id="btn50Perc" type="button">50%</button>
+                            <button class="buttonPercTip" id="btn5Perc" type="button">5%</button>
+                            <button class="buttonPercTip" id="btn10Perc" type="button">10%</button>
+                            <button class="buttonPercTip" id="btn15Perc" type="button">15%</button>
+                            <button class="buttonPercTip" id="btn25Perc" type="button">25%</button>
+                            <button class="buttonPercTip" id="btn50Perc" type="button">50%</button>
                             <input class="btnInputPerc" type="number" id="inputPercTip" placeholder="Custom">
                         </div>
                     </div>
@@ -71,7 +71,7 @@
 
                     </div>
 
-                    <button class="btnReset">RESET</button>
+                    <button id="btnReset" class="btnReset">RESET</button>
 
                 </section>
             </form>
