@@ -35,8 +35,8 @@ body{
 }
 
 .imageLogo{
-    margin-bottom: 2rem;
-    margin-inline: auto;    
+    margin: 4rem auto 2rem;
+  
 }
 .form{
     min-width: 70rem;
