@@ -98,11 +98,11 @@ body{
     background-color: transparent;
     outline-style: none;
     border: none;
-    width: 5rem;
+    width: 14rem;
     height: 2rem;
     text-align: right;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--bc--perc-resul);
 
   
@@ -136,6 +136,7 @@ input[type=number]::-webkit-inner-spin-button { /*retirar setas de rolagem do in
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 0.5rem;
 }
 
 .buttonSelectTips{
@@ -274,5 +275,60 @@ input[type=number]::-webkit-inner-spin-button { /*retirar setas de rolagem do in
 
 .btnReset:hover{
     background-color: var(--bc-inputfocus);
+}
+
+@media (max-width:700px){
+
+    .body{
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .app{
+        width: 100%;
+        height: 100%;
+    }
+    .form{
+        min-width: 38rem;
+    }
+    .formWrapper{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .main{
+        width: 100%;
+    }
+
+    .inputSelectTip{
+        padding-inline: 1rem;
+    }
+    .buttonSelectTips{
+        grid-template-areas: "A B" "C D" "E F";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33.33% 33.33% 33.33%;
+        justify-content: stretch;
+    }
+
+    .inputNumberPeopleCotainer{
+        margin-top: 5rem;
+    }
+
+    .inputBillContent, .inputPeopleContent{
+        height: 4rem;
+    }
+
+    .inputBill, .inputPeople{
+        font-size: 2.5rem;
+    }
+
+    .labelBill, .inputPercTip, .labelPeople{
+        font-size: 1rem;
+    }
+
+    .sideResult{
+        gap: 1rem;
+    }
 }
 
